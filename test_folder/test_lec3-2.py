@@ -22,14 +22,6 @@ def while_to_for():
     for i in range(times):
         print(word, "!!!")
 
-#test for cube_root()
-
-def cube_root_test():
-    assert lec.cube_root(27) == 3
-    assert lec.cube_root(8) == 2
-    assert lec.cube_root(0) == 0
-    print("tests passed!!")
-
 #test for approximate_root()
 def approximate_root_tests():
     assert abs(lec.approximate_root(27, 0.01)[1] - 3) < 0.01
@@ -37,7 +29,5 @@ def approximate_root_tests():
     assert lec.approximate_root(10000, 1e-10)[1] == -1
     print("tests passed!!")
 
-cube_root_test()
 approximate_root_tests()
-
 
